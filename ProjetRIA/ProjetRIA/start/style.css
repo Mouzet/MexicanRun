@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	/* Le padding va être défini à chaque balise à cette valeur du bord */
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+h1, h2, h3 {
+	font-family: serif;
+}
+
+header nav ul {
+	list-style-type: none;
+	overflow:hidden;
+	background-color: #424242;
+	font-weight: bold;
+}
+
+header h1 {
+	padding: 15px;
+	background-image: linear-gradient(#FAAC52, #e16538);
+	color:white;
+	text-align: center;
+}
+
+header li{
+	display: inline-block;
+	margin-right: -4px;
+}
+
+header li a {
+	display: inline-block;
+	color:white;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+}
+
+header li a:hover{
+	background-color:white;
+	color:#e16538;
+}
+
+header h2{
+	border-bottom: 0.1px solid #424242;
+	margin-top: 15px;
+	padding:5px;
+}
+
+main header p{
+	padding: 3px;
+	text-align: right;
+	color: lightgray ;
+	font-style: italic;
+}
+
+article a {
+	text-decoration: none;
+	color:#e16538;
+}
+
+main {
+	display: flex;
+	padding-bottom: 70px;
+	flex: 1 0 auto;
+}
+
+aside {
+	padding:20px;
+	min-width: 250px;
+}
+
+aside h3{
+	background-color: #e16532;
+	color:white;
+	padding-left: 10px
+}
+
+aside ul {
+	list-style-type: none;
+	padding-left: 10px;
+}
+aside div {
+	box-shadow: 0 0 20px grey;
+}
+
+aside li{
+	display: inline;
+	padding: inherit;
+}
+
+footer
+{
+	background-color:#424242;
+	width: 100%;
+	padding: 10px;
+	flex-shrink: 0;
+}
+
+footer img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.active a {
+	background-color:white;
+	color:#e16532;
+}
+
+#myCanvas {
+	padding: 0;
+	margin:auto;
+	display: none;
+}
+
+#MainMenu {
+	display: table;
+	width: 480px;
+	height: 320px;
+	padding: 0;
+	margin : auto;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("ressources/images/back3.jpg");
+	background-size: cover;
+}
+
+.menu {
+	display: table-cell;
+	vertical-align: middle;
+	align-content: center;
+	margin: auto;
+}
+
+#MainMenu button {
+
+	display:block;
+	height: 40px;
+	width: 100px;
+	background-color: transparent;
+	border: solid 3px;
+	border-radius: 20px;
+	margin: 10px auto;
+
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+#name {
+
+	display:block;
+	height: 40px;
+	background-color: transparent;
+	border: solid 3px;
+	border-radius: 20px;
+	margin: 10px auto;
+
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+#MainMenu button:hover {
+	border: none;
+	background-color: white;
+	color: black;
+}
+
+#score {
+	margin: auto;
+	border-spacing: 20px 0;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+}
+#score th{
+	padding-bottom: 10px;
+}
+
+#score td{
+	padding-bottom: 5px;
+}
+
+#endMenu{
+	display: none;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	max-width: 300px;
+	max-height: 375px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#center {
+	margin: auto;
+}
+
+#center2 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 812px){
+
+	* {
+		padding: 0;
+		margin: 0;
+		width: 100;
+	}
+
+	main {
+		display: inline-block;
+		margin: 15px;
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+	#myCanvas{
+		max-width: 100%;
+	}
+
+	li {
+		width: 100%;
+	}
+
+	header li a {
+		width: 100%;
+	}
+	.active a{
+		width: 100%;
+	}
+
+}

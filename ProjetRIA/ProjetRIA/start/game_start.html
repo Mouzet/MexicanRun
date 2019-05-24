@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>624-2 - HTML/CSS/JavaScript</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<style>
+			canvas { background: #eee; display: block; margin: 0 auto; }
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<h1>HES-SO Vs - 624-2 - HTML/CSS/JavaScript</h1>
+			<nav>
+				<!-- Hamburger -->
+				<ul>
+					<li>
+						<a href="description_start.html">Description</a>
+					</li>
+					<li>
+						<a href="maquettes_start.html">Maquettes</a>
+					</li>
+					<li>
+						<a href="mockup_start.html">Mockup</a>
+					</li>
+					<li>
+						<a href="flux_start.html">Flux</a>
+					</li>
+					<li>
+						<a href="journal_de_bord_start.html">Journal de bord</a>
+					</li>
+					<li class="active">
+						<a href="game_start.html">LET'S PLAY</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Début zone pour votre contenu -->
+			<div id="center">
+				<div id="center2">
+					<canvas id="myCanvas" width = 480 height = 320></canvas>
+					<div id="MainMenu">
+						<div class="menu" id="startMenu">
+							<input id="name" type="text" onfocus="this.value=''" value="username">
+							<button onclick="controleUsername()">Start</button>
+							<button onclick="showScore()">Scores</button>
+						</div>
+						<div class="menu" id="endMenu">
+							<table id="score"></table>
+							<button type="button" id="replayButton" onclick="game.replay()">Menu</button>
+						</div>
+					</div>
+				</div>
+
+				<img id="corona" src="ressources/images/corona.png" draggable="true" >
+
+			</div>
+			<script src="game.js"></script>
+			<!-- >Fin zone pour votre contenu -->
+		</main>
+		<!--
+<footer>
+<img id="logo" src="ressources/images/logo.png">
+</footer>
+-->
+	</body>
+</html>
